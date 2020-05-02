@@ -1,0 +1,10 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1569623546339-0147f9c8c4fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 3rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
+}

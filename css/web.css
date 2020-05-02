@@ -1,0 +1,170 @@
+:root {
+    --lightblue: #f6f9fc;
+    --red: #d64041;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-lightblue {
+    background: var(--lightblue);
+}
+
+.bg-gray {
+    background: gray;
+}
+
+img {
+    background-size: cover;
+}
+
+.text-red {
+    color: gray;
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.cover {
+    background: no-repeat center/cover;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+/* navbar */
+
+.navbar-brand {
+    margin-left: 2rem;
+}
+
+.navbar-nav>li {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-nav>li {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: -30px;
+    }
+}
+
+.showcase {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+/*SCROLL ANIMATIONS*/
+
+.scroll .page-header {
+    background: gray;
+}
+
+.scroll .hero {
+    transform: scale(0.98);
+}
+
+/*Header*/
+
+.page-header {
+    transition: background 0.5s ease-in-out;
+}
+
+.page-header .navbar {
+    padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+    /* the variable is inherited from BS4 built-in variables */
+    border-color: var(--white);
+}
+
+/* BANNER SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.showcase {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+}
+
+.showcase::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.showcase .container-fluid {
+    z-index: 10;
+}
+
+.texts {
+    margin: auto;
+}
+
+/*populer destinations*/
+
+.popular-destinations figure {
+    margin-bottom: 30px;
+}
+
+.popular-destinations figcaption {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.popular-destinations img {
+    filter: grayscale(100%) blur(3px);
+    transition: transform 0.5s, filter 0.75s;
+}
+
+.popular-destinations a:hover img {
+    transform: scale(1.25);
+    filter: none;
+}
+
+/*Page Footer*/
+
+.page-footer .footer-links {
+    text-align: right;
+}
+
+/*Media*/
+
+/* MEDIUM SCREENS */
+
+@media screen and (max-width: 991px) {
+    .page-header {
+        background: gray;
+    }
+}
+
+/* SMALL SCREENS */
+
+@media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+        text-align: center;
+    }
+}

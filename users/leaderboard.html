@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/web.css">
+    <link rel="stylesheet" href="../css/registration.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "#f5b1b1",
+            count: 100,
+            speed: 2,
+            minSize: 25,
+            maxSize: 50
+        });
+    </script> <!-- lets destroy ppl computer / will delete later-->
+    <header id="main">
+        <h1>Hello <?php echo  $_SESSION["user"]["username"] ?> <br>
+            Your Current World : <?php echo  $_SESSION["user"]["world"] ?> <br> </h1>
+        <img width="160" src="img/<?php echo $_SESSION['user']['photo'] ?>" /> <!-- will put css later -->
+
+        <a href="logout.php"><img src="../img/back.png" alt="back" href="www.google.com"></a>
+        <!-- and button to update userdata -->
+    </header>
+    <section id="section-a">
+        <p>Server Mode : <?php echo $Query->GetInfo()['GameType']; ?>
+            <br> Server Version : <?php echo $Query->GetInfo()['Version']; ?> /
+            <?php echo $Query->GetInfo()['Software']; ?>
+            <br> Player <?php echo $Query->GetInfo()['Players'] ?> /
+            <!-- Get info from query library -->
+            <?php echo $Query->GetInfo()['MaxPlayers'] ?> :
+            <?php  error_reporting(E_ERROR | E_PARSE);echo implode(',', $Query->GetPlayers()) ?><br> </p>
+        <!-- disable error parsing if no one here -->
+    </section>
+    <section id="section-b">
+        <P>Server good For Now Happy Playing !</P>
+    </section>
+</body>
+
+</html>
