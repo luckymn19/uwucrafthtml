@@ -4,21 +4,54 @@
 }
 
 body {
-    background: url('https://images.unsplash.com/photo-1569623546339-0147f9c8c4fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    background: url('../img/4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.cons {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.cons2 {
+    padding-right: 15px;
+    margin-right: 0;
+}
+
 .kartu {
-    width: 800px;
     margin: 0 auto;
     margin-top: 10rem;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .03);
     transition: all .3s;
 }
 
+.kartu2 {
+    margin: 0 auto;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .03);
+    transition: all .3s;
+}
+
+.kard {
+    margin-left: 3rem;
+}
+
 table {
     width: 100%;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.table2 {
+    width: 60%;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.table3 {
+    width: 86%;
     border: 0;
     margin-bottom: 20px;
 }
@@ -34,4 +67,40 @@ tbody {
 
 .biodata {
     margin-top: 30px;
+}
+
+#myDIV {
+    display: none;
+    margin-top: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #4eb5f1;
+    text-align: center;
+    transition: all 0.2s;
+    margin-bottom: 200px;
+}
+
+button:hover {
+    background-color: #4095c6;
+}
+
+@media all and (max-width:30em) {
+    button {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
+
+.wrap {
+    margin-bottom: 2rem;
 }
